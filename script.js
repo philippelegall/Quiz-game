@@ -291,6 +291,7 @@ const startGame = () => {
 		randomizer = Math.floor(Math.random() * 3   );
 		questionContainerEl.firstElementChild.setAttribute('src', quiz[randomizer].image);
 		answer = quiz[randomizer]
+		console.log(randomizer);
     });
 
 	answerButtons.forEach( (e) => {
@@ -316,13 +317,12 @@ answerButtonsEl.addEventListener('click', e => {
 			score++;
 			e.target.classList.add('correct');
 			console.log(`Correct!`);
-
+		} 
 			// filter and push away used quiz
 			usedQuiz.push(answer);
 			quiz = quiz.filter( (e) => e !== answer); 
 			console.log(quiz);
-		} 
-
+			
 		if (guesses <= quizSize) {
 			startGame();
 
