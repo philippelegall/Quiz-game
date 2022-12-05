@@ -1,0 +1,175 @@
+/* General */
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #252422;
+}
+h2{
+    font-size: 40px;
+    position:absolute;
+    top:0px; 
+    margin:5px;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+/* Results section */
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 30px;
+}
+
+.score li {
+    padding: 10px;
+}
+
+/* Quiz section */
+.quiz-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    color: #eb5e28;
+}
+
+.quiz-image {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-image img {
+    width: 75%;
+}
+
+/* Buttons */
+.answer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.btnStyle {
+    margin: 10px;
+    cursor: pointer;
+    background-color: #fffcf2;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.btnStyle:hover {
+    transition: 0.3s;
+    background-color: inherit;
+    background-color: #ccc5b9;
+    color: #252422;;
+    color: inherit;
+}
+
+.control-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.control-btns button {
+    cursor: pointer;
+    background-color: gray;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.control-btns .start-btn {
+    padding: 20px;
+    font-size: 2em;
+}
+.option-1:hover, .option-2:hover, .option-3:hover{
+    background-color: #eb5e28;
+}
+
+.control-btns .result-btn {
+    width: 100px;
+    background-color: #eb5e28;
+    box-shadow: 5px 10px;
+}
+
+.control-btns .reset-btn {
+    width: 100px;
+    background-color: #eb5e28;
+    box-shadow: 5px 10px;
+}
+
+.correct {
+    background-color: green;
+    color: inherit;
+}
+
+/* Media query md */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .quiz-title {
+        font-size: 3em;
+    }
+
+    .quiz-image img {
+        width: 50%;
+    }
+
+    .answer-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding: 15px;
+    }
+
+    .btnStyle {
+        padding: 8px;
+    }
+
+    .control-btns {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .control-btns  button{
+        padding: 5px;
+    }
+}
+
+
+/* Media query lg */
+@media only screen and (min-width: 1100px) {
+    .container {
+        width: 65%;
+    }
+
+    .quiz-image img {
+        width: 50%;
+    }
+
+    .btnStyle {
+        padding: 12px;
+    }
+
+    .control-btns  button{
+        padding: 10px;
+    }
+}

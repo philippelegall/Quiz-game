@@ -11,7 +11,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Final result container -->
+        <div id="results" class="">
+            <div class="score">
+            </div>
+        </div>
+
+        <!-- Quiz section starts here! -->
+        <div id="quiz-container" class ="hide">
+
+            <!-- Quiz heading -->
+            <div class="quiz-title">Who is this?</div>
+
+            <!-- Image to guess -->
+            <div id="question" class="quiz-image">
+                <img src="" alt="images">
+            </div>
+
+            <!-- Answer buttons -->
+            <div id="answer-btns" class="answer-container">
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+                <button class="btnStyle"></button>
+            </div>
+
+        </div>
+
+        <!-- Important buttons -->
+        <div class="control-btns">
+            <h2>Choose how many question?</h2>
+            <button id="option-1" class="start-btn option-1">10</button>
+            <button id="option-2" class="start-btn option-2">20</button>
+            <button id="option-3" class="start-btn option-3">30</button>
+            <button id="result-btn" class="result-btn hide">Result</button>
+            <button id="reset-btn" class="reset-btn hide">Reset</button>
+        </div>
+        
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
